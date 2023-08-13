@@ -20,6 +20,8 @@
     ```kubectl exec -it curl-pod -- /bin/sh```
 5. run curl command
 
-    ```curl -k -H "Authorization: Bearer $(cat /var/run/secrets/kubernetes.io/serviceaccount/token)" \
-    https://kubernetes.default.svc.cluster.local/api/v1/namespaces/default/pods```
+    ```
+    curl -k -H "Authorization: Bearer $(cat /var/run/secrets/kubernetes.io/serviceaccount/token)"
+    https://kubernetes.default.svc.cluster.local/api/v1/namespaces/default/pods
+    ```
 6. get all pods inside the `default` namespace
