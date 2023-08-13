@@ -7,7 +7,7 @@
 
 ### Steps
 1. create a pod to run curl command by running below command(yml setting detail sees curl_pod.yml)
-    kubectl apply -f curl_pod.yml
+    ```kubectl apply -f curl_pod.yml```
 
 2. create a clusterRole and apply it by running below command(yml setting detail sees read_pod_rule.yml)
     kubectl apply -f read_pod_rule.yml
